@@ -1,0 +1,139 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu-list::before
+{
+    position: absolute;
+    content: "";
+    width: 360px;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.16;
+    top: 0;
+}
+
+.main-menu-item::after
+{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 40px;
+    transform: translate(0, -50%);
+    background-image: url( "images/arrow_icon.svg");
+    width: 16px;
+    height: 16px;
+}
+
+
+body{
+    background-color: #E8EBF4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    height: 100vh; 
+}
+
+
+.widget_phone{
+    background-color: #FFF;
+    border-radius: 40px;
+    width: 400px;
+    height: 812px;
+    padding-left: 20px;
+    box-shadow: 21px 15px 13px -1px rgba(67, 67, 67, 0.2);
+
+}
+
+.header
+{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-photo
+{   
+    min-width: 64px;
+    min-height: 64px;
+    border-radius: 16px;   
+}
+
+
+.name_profile
+{
+    margin: 0;
+    margin-top: 45px;
+}
+
+.spec
+{
+    font-weight: normal;
+    margin-bottom: 37px;
+    margin-top: 8px;
+}
+
+
+.main-menu-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding-top: 32px;
+    padding-bottom  : 32px;
+    
+}
+
+.main-menu-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+    transition: transform  linear 0.4s;
+
+    /* transition: cursor  0.4s; */
+    
+}
+
+
+.main-menu-item:hover
+{
+    transform: scale(1.05);
+    background-color: #bbc7f23d;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.main-menu-item-icon
+{
+    width: 36px;
+    height: 36px;
+}
+
+.footer-menu-list
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 140px;
+    margin-right: 20px;
+}
+
+.footer-menu-item-icon
+{
+    width: 32px;
+    height: 32px;
+}
+
+.footer-menu-item-icon.enlarged
+{
+    background-color: #d9d9d9;
+    border-radius: 10px; 
+    transform: scale(1.75);
+    cursor: pointer;
+}
